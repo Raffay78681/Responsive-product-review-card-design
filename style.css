@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Outfit;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  background-color: hsl(216, 55%, 11%);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90vw;
+  max-width: 350px;
+  padding: 20px;
+  gap: 15px;
+  border-radius: 15px 15px 15px 15px;
+  background-color: hsl(214, 50%, 16%);
+}
+.nft-img-wrapper {
+  position: relative;
+}
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0%;
+  border-radius: 10px 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+.eye-icon {
+  position: absolute;
+}
+.nft-image {
+  display: block;
+  width: 100%;
+  border-radius: 10px 10px;
+}
+.heading-wrapper {
+  text-decoration: none;
+}
+.nft-name {
+  display: inline;
+  color: hsla(0, 0%, 100%, 0.95);
+  transition: color 0.3s ease-in-out;
+}
+.nft-description {
+  color: hsl(217, 30%, 66%);
+  font-size: 18px;
+}
+.eth-info {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+.value-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.eth-icon {
+  width: 15px;
+  height: 15px;
+}
+.value {
+  color: hsl(178, 100%, 50%);
+}
+.time-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.time-icon {
+  width: 15px;
+  height: 15px;
+}
+.time-left {
+  color: hsl(217, 30%, 66%);
+}
+hr {
+  margin-top: 10px;
+  background-color: rgb(40, 40, 107);
+  height: 1px;
+}
+.creator-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.creator-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.creation-of {
+  color: hsl(217, 30%, 66%);
+}
+.creator-name {
+  text-decoration: none;
+  color: whitesmoke;
+  transition: color 0.3s ease-in-out;
+}
+.overlay:hover {
+  opacity: 50%;
+}
+.nft-name:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.creator-name:hover {
+  color: hsl(178, 100%, 50%);
+}
